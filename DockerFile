@@ -1,0 +1,15 @@
+FROM node:16.14.0
+
+# Add a new user, nodejs
+RUN groupadd -r nodejs && useradd --create-home --system --gid nodejs --shell /bin/bash nodejs
+# Set the user to nodejs
+USER nodejs
+
+RUN mkdir /home/nodejs/api
+WORKDIR /home/nodejs/api
+
+COPY package.json .
+RUN npm install --quiet
+COPY . .
+
+CMD ["npm", "start"]
