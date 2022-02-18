@@ -1,0 +1,8 @@
+entity: pokemon
+items:
+  pokemon_Charizard:
+    name: 'Charizard'
+    number: 9
+    types:
+      - '@type_fire'
+      - '@type_flying'

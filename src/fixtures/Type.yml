@@ -1,0 +1,7 @@
+entity: Type
+items:
+  type_flying:
+    description: 'Flying'
+
+  type_fire:
+    description: 'Fire'
