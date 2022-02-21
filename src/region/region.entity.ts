@@ -22,6 +22,8 @@ export class Region {
   @UpdateDateColumn({ name: 'updated_at' })
   updatedAt: Date;
 
-  @OneToMany(() => Pokemon, (pokemon) => pokemon.originalRegion)
+  @OneToMany(() => Pokemon, (pokemon) => pokemon.originalRegion, {
+    cascade: ['insert', 'update', 'remove'],
+  })
   pokemons: Pokemon[];
 }

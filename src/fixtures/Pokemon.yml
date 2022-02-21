@@ -1,8 +1,32 @@
 entity: pokemon
 items:
-  pokemon_Charizard:
+  pokemon_charizard:
     name: 'Charizard'
     number: 9
     types:
       - '@type_fire'
       - '@type_flying'
+    originalRegion: '@region_kanto'
+
+  pokemon_venusaur:
+    name: 'Venusaur'
+    number: 3
+    types:
+      - '@type_grass'
+      - '@type_poison'
+    originalRegion: '@region_kanto'
+
+  pokemon_blastoise:
+    name: 'Blastoise'
+    number: 6
+    types:
+      - '@type_water'
+    originalRegion: '@region_kanto'
+
+  pokemon_celebi:
+    name: 'Celebi'
+    number: 251
+    types:
+      - '@type_grass'
+      - '@type_psychic'
+    originalRegion: '@region_johto'

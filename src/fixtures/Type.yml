@@ -5,3 +5,15 @@ items:
 
   type_fire:
     description: 'Fire'
+
+  type_water:
+    description: 'Water'
+
+  type_grass:
+    description: 'Grass'
+
+  type_psychic:
+    description: 'Psychic'
+
+  type_poison:
+    description: 'Poison'

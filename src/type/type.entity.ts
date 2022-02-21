@@ -23,7 +23,7 @@ export class Type {
   updatedAt: Date;
 
   @ManyToMany(() => Pokemon, (pokemon) => pokemon.types, {
-    cascade: ['update', 'remove'],
+    cascade: ['insert', 'update', 'remove'],
   })
   pokemons: Pokemon[];
 }

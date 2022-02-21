@@ -1,0 +1,7 @@
+entity: Region
+items:
+  region_kanto:
+    name: 'Kanto'
+
+  region_johto:
+    name: 'Johto'

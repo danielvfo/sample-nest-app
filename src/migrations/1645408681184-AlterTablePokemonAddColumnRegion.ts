@@ -29,6 +29,8 @@ export class AlterTablePokemonAddColumnRegion1645408681184
         columnNames: [this.columnName],
         referencedTableName: 'region',
         referencedColumnNames: ['id'],
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE',
       }),
     );
   }

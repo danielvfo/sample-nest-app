@@ -2,6 +2,8 @@ import {
   Column,
   CreateDateColumn,
   Entity,
+  Generated,
+  JoinColumn,
   JoinTable,
   ManyToMany,
   ManyToOne,
@@ -37,5 +39,6 @@ export class Pokemon {
   types: Type[];
 
   @ManyToOne(() => Region, (region) => region.pokemons)
+  @JoinColumn({ name: 'original_region_id' })
   originalRegion: Region;
 }
