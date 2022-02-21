@@ -1,13 +1,15 @@
-import { Type } from '../type/type.entity';
 import {
   Column,
   CreateDateColumn,
   Entity,
   JoinTable,
   ManyToMany,
+  ManyToOne,
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
+import { Type } from '../type/type.entity';
+import { Region } from '../region/region.entity';
 
 @Entity()
 export class Pokemon {
@@ -33,4 +35,7 @@ export class Pokemon {
     inverseJoinColumn: { name: 'type_id', referencedColumnName: 'id' },
   })
   types: Type[];
+
+  @ManyToOne(() => Region, (region) => region.pokemons)
+  originalRegion: Region;
 }
