@@ -1,0 +1,10 @@
+entity: HeldItem
+items:
+  held_item_pecha_berry:
+    itemName: 'Pecha Berry'
+
+  held_item_thunder_stone:
+    itemName: 'Thunder Stone'
+
+  held_item_gs_ball:
+    itemName: 'GS Ball'

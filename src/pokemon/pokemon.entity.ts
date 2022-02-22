@@ -2,16 +2,17 @@ import {
   Column,
   CreateDateColumn,
   Entity,
-  Generated,
   JoinColumn,
   JoinTable,
   ManyToMany,
   ManyToOne,
+  OneToOne,
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
 import { Type } from '../type/type.entity';
 import { Region } from '../region/region.entity';
+import { HeldItem } from '../held-item/held-item.entity';
 
 @Entity()
 export class Pokemon {
@@ -41,4 +42,8 @@ export class Pokemon {
   @ManyToOne(() => Region, (region) => region.pokemons)
   @JoinColumn({ name: 'original_region_id' })
   originalRegion: Region;
+
+  @OneToOne(() => HeldItem, (heldItem) => heldItem.pokemon)
+  @JoinColumn({ name: 'held_item_id' })
+  heldItem: HeldItem;
 }

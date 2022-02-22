@@ -22,6 +22,7 @@ items:
     types:
       - '@type_water'
     originalRegion: '@region_kanto'
+    heldItem: '@held_item_pecha_berry'
 
   pokemon_celebi:
     name: 'Celebi'
@@ -30,3 +31,4 @@ items:
       - '@type_grass'
       - '@type_psychic'
     originalRegion: '@region_johto'
+    heldItem: '@held_item_gs_ball'

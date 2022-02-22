@@ -8,6 +8,7 @@ import dbConfiguration from './config/db.config';
 import { PokemonModule } from './pokemon/pokemon.module';
 import { TypeModule } from './type/type.module';
 import { RegionModule } from './region/region.module';
+import { HeldItemModule } from './held-item/held-item.module';
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { RegionModule } from './region/region.module';
     PokemonModule,
     TypeModule,
     RegionModule,
+    HeldItemModule,
   ],
   controllers: [AppController],
   providers: [AppService],
