@@ -9,7 +9,7 @@ export class PokemonController {
   constructor(private readonly pokemonRepository: PokemonRepository) {}
 
   @Get(':type')
-  async getAllPokemonsByType(
+  async getAllPokemonsByTypeUsingQueryBuilder(
     @Param() params: FindByTypeArgs,
   ): Promise<Pokemon[]> {
     return this.pokemonRepository.getAllByType(params.type);
