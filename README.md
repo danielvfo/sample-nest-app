@@ -11,6 +11,11 @@ This project was made possible thanks to [TypeORM](https://github.com/typeorm/ty
 
 This is a simple Nest.js project with some TypeORM entities featuring Many To Many, Many To One, One To One relations and Fixtures. It uses some fictional Pokemon® concepts to implement these relations. Database is PostgreSQL. Feel free to use it.
 
+## Dependencies
+
+- `node` >= **16.14.x**
+- `npm` >= **8.5.x**
+
 ## Install and run
 
 ```bash
