@@ -16,7 +16,6 @@ export default registerAs('database', () => {
     //synchronize: process.env.MODE === "dev",
     entities: ['src/**/*.entity.ts'],
     migrations: ['src/migrations/*{.ts,.js}'],
-    //migrations: [join(__dirname, 'migrations', '*{.ts,.js}')],
     cli: {
       migrationsDir: 'src/migrations',
     },

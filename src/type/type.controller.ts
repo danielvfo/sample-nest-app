@@ -14,7 +14,7 @@ export class TypeController {
   ): Promise<Type[]> {
     return this.typeRepository.find({
       where: { description: params.type },
-      relations: ['pokemons'],
+      relations: ['pokemons', 'pokemons.types'],
     });
   }
 }
