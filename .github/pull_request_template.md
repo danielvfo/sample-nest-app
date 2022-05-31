@@ -17,5 +17,4 @@ Detalhar as alterações e os seus impactos
 
 ## Validações de boas práticas!
 
-- [ ] O código respeita o uso dos padrões de arquitetura e a responsabilidade de cada camada. [Saiba mais aqui!](https://team-1611694015260.atlassian.net/wiki/spaces/GDO/pages/90570890/)
-
+- [ ] O código respeita o uso dos padrões de arquitetura e a responsabilidade de cada camada.
