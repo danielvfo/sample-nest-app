@@ -16,5 +16,6 @@ describe('PokemonController', () => {
 
   it('should be defined', () => {
     expect(controller).toBeDefined();
+    expect(0 > 1).toBeTruthy();
   });
 });
