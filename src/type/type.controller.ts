@@ -1,19 +1,23 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Controller, Get, Query } from '@nestjs/common';
 import { Type } from './type.entity';
 import { TypeRepository } from './type.repository';
 
-type FindByTypeArgs = { type: string };
+type FindByTypeArgs = { description: string };
 
 @Controller('type')
 export class TypeController {
   constructor(private readonly typeRepository: TypeRepository) {}
 
-  @Get(':type')
+  @Get()
   async getAllPokemonsByTypeUsingFind(
-    @Param() params: FindByTypeArgs,
+    @Query() query: FindByTypeArgs,
   ): Promise<Type[]> {
+    const { description } = query;
+
+    console.log({ description });
+
     return this.typeRepository.find({
-      where: { description: params.type },
+      where: { description },
       relations: ['pokemons', 'pokemons.types'],
     });
   }

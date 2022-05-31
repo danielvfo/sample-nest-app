@@ -1,7 +1,7 @@
 # Sample Nest App
 
 <p align="center">
-  <a href="https://github.com/danielvfo/sample-nest-app" target="blank"><img src="./diagram.png" width="640" alt="Project ER Diagram" /></a>
+<a href="https://github.com/danielvfo/sample-nest-app" target="blank"><img src="./diagram.png" width="640" alt="Project ER Diagram" /></a>
 </p>
 
 This project was made possible thanks to [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
@@ -29,7 +29,7 @@ $ npm run fixtures
 
 $ npm run start:dev
 ```
-And then you can call http://localhost:3000/type/Grass from your browser
+And then you can call http://localhost:3000/type?type=Grass from your browser
 
 ## License
 
